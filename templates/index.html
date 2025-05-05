@@ -1,10 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Hello Flask</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Flask Web App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #5c6bc0;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input[type="text"], input[type="email"], button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        button {
+            background-color: #5c6bc0;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3949ab;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #5c6bc0;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello!</h1>
-    <p>This page is powered by Python and Flask.</p>
+    <header>
+        <h1>Welcome to the Flask Web Application</h1>
+    </header>
+
+    <section>
+        <h2>About This Web Application</h2>
+        <p>
+            This is a simple Flask-based web application. It demonstrates how to serve dynamic content using Python and HTML.
+        </p>
+        <p>
+            Here, you'll find a basic form that collects user information and interacts with the page. Let's explore more features together!
+        </p>
+    </section>
+
+    <section>
+        <h2>Sign Up Form</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Flask Web App. All rights reserved.</p>
+    </footer>
 </body>
 </html>
