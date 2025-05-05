@@ -12,5 +12,6 @@ def submit():
     email = request.form.get('email')
     return f"Thank you for submitting, {name}! We will contact you at {email}."
 
+# Vercel requires an entry point, not app.run()
 if __name__ == '__main__':
     app.run(debug=True)
